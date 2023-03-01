@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>902</width>
+    <height>663</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Image Generator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>269</x>
+      <y>9</y>
+      <width>621</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="example_layout">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="plt_layout"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>251</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="option_layout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item row="6" column="0">
+      <widget class="QLabel" name="shearRange_label">
+       <property name="text">
+        <string>shear_range</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="horizontalFlip_label">
+       <property name="text">
+        <string>horizontal_flip</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="zoomRange_label">
+       <property name="text">
+        <string>zoom_range</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QDoubleSpinBox" name="zoomRange_spinBox"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QDoubleSpinBox" name="widthShiftRange_SpinBox">
+       <property name="maximum">
+        <double>0.990000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="widthShiftRange_label">
+       <property name="text">
+        <string>width_shift_range</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="count_spinBox">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QComboBox" name="verticalFlip_comboBox">
+       <item>
+        <property name="text">
+         <string>False</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>True</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="verticalflip_label">
+       <property name="text">
+        <string>vertical_flip</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="count_label">
+       <property name="text">
+        <string>count</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="fillmode_label">
+       <property name="text">
+        <string>fill_mode</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QDoubleSpinBox" name="heightShiftRange_spinBox">
+       <property name="maximum">
+        <double>0.990000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="option_label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>옵션</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QDoubleSpinBox" name="shearRange_spinBox"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="horizontalFlip_comboBox">
+       <item>
+        <property name="text">
+         <string>False</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>True</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="heightshiftrange_label">
+       <property name="text">
+        <string>height_shift_range</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QComboBox" name="fillMode_comboBox">
+       <item>
+        <property name="text">
+         <string>constant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>nearest</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>reflect</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>wrap</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="rotationRange_label">
+       <property name="text">
+        <string>rotation_range</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDoubleSpinBox" name="rotationRange_spinBox">
+       <property name="maximum">
+        <double>360.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QPushButton" name="generateAndSave_button">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>generate/save</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QPushButton" name="preview_button">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>미리보기</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>902</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>파일</string>
+    </property>
+    <addaction name="fileOpen_action"/>
+    <addaction name="directoryOpen_action"/>
+    <addaction name="generateAndSave_action"/>
+   </widget>
+   <widget class="QMenu" name="help_menu">
+    <property name="title">
+     <string>도움말</string>
+    </property>
+    <addaction name="optionHelp_action"/>
+    <addaction name="howtoHelp_action"/>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="help_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="fileOpen_action">
+   <property name="text">
+    <string>파일 열기</string>
+   </property>
+  </action>
+  <action name="directoryOpen_action">
+   <property name="text">
+    <string>경로 열기</string>
+   </property>
+  </action>
+  <action name="optionHelp_action">
+   <property name="text">
+    <string>속성 도움말</string>
+   </property>
+  </action>
+  <action name="howtoHelp_action">
+   <property name="text">
+    <string>사용법 도움말</string>
+   </property>
+  </action>
+  <action name="generateAndSave_action">
+   <property name="text">
+    <string>이미지 만들고 저장하기</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
